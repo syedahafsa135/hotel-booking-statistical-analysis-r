@@ -1,0 +1,8 @@
+# Raw data: download instead (see data/README.md)
+data/*.csv
+outputs/
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
