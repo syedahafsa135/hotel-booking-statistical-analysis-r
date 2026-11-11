@@ -58,7 +58,18 @@ R 4.6.1 with the tidyverse (readr, dplyr, ggplot2) for cleaning and charts, and 
 5. Price for the number of guests: each extra guest adds about €27 a night.
 6. Don't over-invest in lead-time pricing: 100 days earlier lowers the rate by only about €10.5.
 
-**Charts.** Running the script saves nine charts to `figures/`, including the cancellation rate by deposit type (`04_cancellation_by_deposit.png`), the seasonal pattern (`05_seasonality.png`) and the residual diagnostics.
+**Charts** (all nine are saved to `figures/` by the script):
+
+![Seasonal pattern in room rates: the resort swings from about €50 to €188, the city hotel barely moves](figures/05_seasonality.png)
+
+| | |
+|---|---|
+| ![Room rate by market segment](figures/06_adr_by_segment.png) | ![Cancellation rate by deposit type](figures/04_cancellation_by_deposit.png) |
+| Rate by market segment (ANOVA, η² = .141) | Cancellation by deposit type (Cramér's V = .48) |
+| ![Room rate by hotel type](figures/03_adr_by_hotel.png) | ![Lead time vs room rate](figures/07_lead_time_vs_adr.png) |
+| Rate by hotel (Welch t-test, d = 0.22) | Lead time vs rate (r = −.09) |
+
+Residual diagnostics: [residuals vs fitted](figures/08_residuals_vs_fitted.png), [Q-Q plot](figures/09_qq_residuals.png). Distributions: [lead time](figures/01_lead_time.png), [room rate](figures/02_adr.png).
 
 ## How to run
 
